@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Low Methane Livestock</title>
     <style>
         body {
             margin: 0;
@@ -12,35 +12,62 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: url('grazing-cows.jpeg') no-repeat center center/cover;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-weight: 500;
             text-align: center;
+            color: white;
+            background: url('grazing-cows.jpeg') no-repeat center center;
+            background-size: cover;
         }
-        .logos {
-            display: flex;
-            gap: 20px;
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 20px;
         }
-        .logos img {
-            width: 100px;
-        }
+
         a {
-            display: block;
+            display: inline-block;
             margin-top: 20px;
             font-size: 20px;
             color: white;
             text-decoration: none;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 12px 24px;
             border-radius: 5px;
+        }
+
+        .logo-bar {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logos {
+            display: flex;
+            gap: 20px;
+        }
+
+        .logos img {
+            max-height: 50px;
         }
     </style>
 </head>
 <body>
-    <div class="logos">
-        <img src="TNCLogoPrimary_RGB.jpg" alt="The Nature Conservancy">
-        <img src="GMH_logo_New.png" alt="Global Methane Hub">
-        <img src="uoc-msa-color.png" alt="University of Chicago Market Shaping Accelerator">
-        <img src="spark-logo-light-bg-color-default.png" alt="Spark Climate Solutions">
-    </div>
+    <div class="title">Low Methane Livestock</div>
     <a href="mailto:info@lowmethanelivestock.com">Contact Us</a>
+
+    <div class="logo-bar">
+        <div class="logos">
+            <img src="TNCLogoPrimary_RGB.jpg" alt="The Nature Conservancy">
+            <img src="GMH_logo_New.png" alt="Global Methane Hub">
+            <img src="uoc-msa-color.png" alt="University of Chicago Market Shaping Accelerator">
+            <img src="spark-logo-light-bg-color-default.png" alt="Spark Climate Solutions">
+        </div>
+    </div>
 </body>
 </html>
